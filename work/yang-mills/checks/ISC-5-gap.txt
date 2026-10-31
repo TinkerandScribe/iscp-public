@@ -1,0 +1,7 @@
+ISC-5 Gap — yes
+
+For SU(2) compact cylinder (Hetrick/Witten convention):
+  Δ = 3 g² L / 8 > 0  (for g² L > 0)
+Numeric check with g²L=1: Δ=0.375
+General compact G: Δ = (g² L / 2) * λ₁(G) where λ₁ is first positive
+eigenvalue of the (radial) Laplacian / first positive Casimir.

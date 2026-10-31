@@ -1,0 +1,12 @@
+ISC-5 Gap — yes
+
+Lean theorem massGap_pos:
+  ∀ gL : CouplingLength, 0 < gL.num → FracPos (massGap gL)
+
+I.e. if g₀² L_x = num/den with num>0, den>0 then Δ = E(1/2) is a positive fraction.
+
+Closed form (three_eighths_pos):
+  0 < gL.num → FracPos (3 * gL.num, 8 * gL.den)
+  Δ = 3 g₀² L_x / 8 > 0
+
+Numeric Rat cross-check (ratGap_unit): g₀² L_x=1 → Δ=3/8=0.375

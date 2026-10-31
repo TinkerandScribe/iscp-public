@@ -1,0 +1,9 @@
+ISC-5 Gap — yes (negative form)
+
+No accepted continuum lower bound m>0 after a→0 in d≥3 for pure non-Abelian YM.
+
+Available positive bounds:
+- lattice strong-coupling fixed a (CARD-03)
+- continuum 2D cylinder (CARD-02)
+
+Neither upgrades to continuum d≥3.

@@ -1,0 +1,6 @@
+ISC-5 Gap — yes (continuum units)
+
+Cylinder continuum: Δ = (g₀² L_x / 2) λ₁
+SU(2): Δ = 3 g₀² L_x / 8
+Numeric g₀² L_x=1 → Δ=0.375
+Survives a→0: parameters are continuum coupling and continuum length; no lattice spacing remains.

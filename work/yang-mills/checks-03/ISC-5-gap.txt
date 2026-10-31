@@ -1,0 +1,6 @@
+ISC-5 Gap — yes
+
+In the Osterwalder–Seiler strong-coupling window (β sufficiently small), connected gauge-invariant correlators decay exponentially with rate m(β,G,d) > 0, uniform in spatial volume. Equivalently the transfer Hamiltonian satisfies Spec ⊂ {0} ∪ [m,∞) with m>0 in that window.
+
+Bound depends on β, G, d; positivity is uniform in volume at fixed a.
+NOT a continuum a→0 lower bound.

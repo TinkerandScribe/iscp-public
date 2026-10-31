@@ -1,0 +1,18 @@
+diff --git a/harness/executable/experience_store.py b/harness/executable/experience_store.py
+index 1face3d..10e2c85 100644
+--- a/harness/executable/experience_store.py
++++ b/harness/executable/experience_store.py
+@@ -82,3 +82,14 @@ class ExperienceStore:
+ 
+     def dump(self) -> List[Dict[str, Any]]:
+         return [r.to_dict() for r in self.records]
++
++    def count_records(self) -> int:
++        return len(self.records)
++
++
++if __name__ == "__main__":
++    import sys
++
++    if "--count" in sys.argv:
++        print(ExperienceStore().count_records())
