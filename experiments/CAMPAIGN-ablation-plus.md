@@ -1,7 +1,7 @@
 # Phase 3b campaign: ablation — which plus steps actually help
 
 **Status:** Ran 2026-08-26 · **KEEP** adversary, Red Queen, CI-EM P1, and refusal certificates as plus steps. exp-021 typed default unchanged. Helpers not wired.  
-**Parent tracking:** [Issue #3](https://github.com/TinkerandScribe/iscp/issues/3)  
+**Parent tracking:** internal issue #3 (not public; see [iscp-public](https://github.com/TinkerandScribe/iscp-public))  
 **Depends on:** [exp-021](exp-021.md) bakeoff (15/15 scored) · Phase 2 KEEP list  
 **Primary brief:** [exp-022](exp-022.md)  
 **Appendix:** [ablation-plus/](ablation-plus/)

@@ -2,9 +2,9 @@
 
 **Current name:** Ideal State Control Plane (**ISCP**)
 
-**Old name:** gxp (Guided eXecution Protocol — systems-engineering add-on)
+**Formerly an add-on to GXP** (Guided eXecution Protocol — systems-engineering add-on)
 
-**Repo:** [`TinkerandScribe/iscp`](https://github.com/TinkerandScribe/iscp)  
+**Repo:** [`TinkerandScribe/iscp-public`](https://github.com/TinkerandScribe/iscp-public)  
 Renamed from `gxp` on 2026-08-26. GitHub still redirects old URLs.
 
 **Skill id:** `iscp` only. Path: [`skills/iscp/SKILL.md`](skills/iscp/SKILL.md). There is no `gxp` skill alias.

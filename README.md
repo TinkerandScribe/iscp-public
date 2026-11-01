@@ -74,6 +74,8 @@ Not run: exp-005, 008, 009 (they targeted product surfaces that aren't part of t
 
 ## Where the helpers came from
 
+Examples and file names in the research notes come from internal Tinker & Scribe products.
+
 ISCP grew up next to a private product engine. A few helpers were first tested there. The copies in [`harness/iscp-research/`](harness/iscp-research/) don't import that engine and run on their own. See [BOUNDARY.md](harness/iscp-research/BOUNDARY.md).
 
 ## How to use it
