@@ -35,7 +35,7 @@ These records store outcomes and failures for ISCP nodes.
 
 ## CI-EM add-on (exp-012 KEEP)
 
-This is the criterion-indexed form. `failed_criteria` and `outcome` stay required. Extra fields (same shape as the old the reference engine prototype; that file is not the read path):
+This is the criterion-indexed form. `failed_criteria` and `outcome` stay required. Extra fields :
 
 ```json
 {
@@ -80,7 +80,7 @@ The shared fleet store is canonical:
 
 Per-work files such as `work/yang-mills/memory/em-records.jsonl` are seeds. Promote them into `<shared-store>/em-records.jsonl`. They are not the P1 read path.
 
-Reference reader: `harness/iscp-research/ci-em.ts` (`retrieveCiEm(recordsPath, query)`). It does not import Idea Gate. P1 stays the default. Ecosystem rows (laser-safety, PPE, LSO, per-equipment) stay quarantined. P0 is not a read mode.
+Reference reader: `harness/iscp-research/ci-em.ts` (`retrieveCiEm(recordsPath, query)`). It has no outside engine dependency. P1 stays the default. Ecosystem rows (laser-safety, PPE, LSO, per-equipment) stay quarantined. P0 is not a read mode.
 
 ### Refusal certificates (exp-013 KEEP)
 

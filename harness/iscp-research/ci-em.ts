@@ -1,8 +1,8 @@
 /**
  * Engine-free CI-EM P1 reader.
- * Reads criterion-indexed rows from a JSONL path. Canonical fleet file:
+ * Reads criterion-indexed rows from a JSONL path. Default records file:
  * `$ISCP_EM_RECORDS` (default ./em-records.jsonl).
- * Does not import the reference engine/engine.ts. The Idea Gate housing copy is not the read path.
+ * Has no outside engine dependency.
  *
  * P1 only: verified, same family, `transfer_scope: ecosystem` excluded (TN).
  * P0 is not implemented.

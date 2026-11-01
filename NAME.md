@@ -19,7 +19,7 @@ A control system for agent work. It uses:
 - failure memory keyed to those criteria
 - strict rules before any graph change
 
-It comes from GXP (loop + pass/fail checks + hard limits). It is **not** a product runtime. It does not auto-wire into `the reference engine` or curriculum-forge pipelines.
+It comes from GXP (loop + pass/fail checks + hard limits). It is **not** a product runtime. It does not auto-wire into any product pipeline.
 
 ## What stayed the same
 
