@@ -4,8 +4,7 @@
 
 **Formerly an add-on to GXP** (Guided eXecution Protocol — systems-engineering add-on)
 
-**Repo:** [`TinkerandScribe/iscp-public`](https://github.com/TinkerandScribe/iscp-public)  
-Renamed from `gxp` on 2026-08-26. GitHub still redirects old URLs.
+**Repo:** [`TinkerandScribe/iscp-public`](https://github.com/TinkerandScribe/iscp-public)
 
 **Skill id:** `iscp` only. Path: [`skills/iscp/SKILL.md`](skills/iscp/SKILL.md). There is no `gxp` skill alias.
 
