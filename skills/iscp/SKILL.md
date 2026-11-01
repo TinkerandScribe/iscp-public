@@ -6,7 +6,7 @@ Checked by exp-021 (bakeoff), exp-022 (add-one tests), and Phase 4 exp-030–032
 
 **Old skill id:** `gxp` (removed on 2026-08-26). **No alias.**
 
-Helpers are read-only. Do not edit `the reference engine` `engine.ts` or curriculum-forge pipeline layout. Do not un-park laser-safety. Do not turn on exp-015.
+Helpers are read-only. Don't wire them into product code from this skill. Keep exp-015 (rejected) off.
 
 Load this file. Run the chooser below. Use **thin** unless one plus step is chosen. Spawn **at most one** plus step.
 
@@ -17,7 +17,7 @@ Load this file. Run the chooser below. Use **thin** unless one plus step is chos
 - **Plus:** one extra focused step. Not a new personality.
 - **Adversary:** one pass that hunts weasel words, untestable checks, and reward hacks.
 - **Red Queen:** hunt what the first fix missed. Do not re-list the first catalog.
-- **CI-EM P1:** pull verified same-family failures by id from `<shared-store>/em-records.jsonl`. Ecosystem / laser records stay out.
+- **CI-EM P1:** pull verified same-family failures by id from the JSONL file at `$ISCP_EM_RECORDS`. Ecosystem records stay out.
 - **Refusal digest:** an offline-checkable record after a correct stop / kill / park (exp-031). Not a legal certificate.
 - **Commit-or-refuse:** one handoff for “change the checks” (τ4) vs “record a stop” (τ2). HOLD is not a refuse. REFUSE is not a genome commit.
 - **Sealed:** an Ideal State Criterion that passed verification in this session. No τ4 edit or remove until a new session/epoch.
@@ -127,18 +127,18 @@ Retrieve criterion-indexed **verified** failures at policy **P1** (same family, 
 - Naming “CI-EM” without a retrieved **id** is a miss.
 - Emit a transfer table: each candidate reuse is TP or TN, with id.
 - Ecosystem (laser-safety, PPE, LSO, per-equipment) stays **TN** unless a human quarantine review names the id. Never auto-apply onto nature-study.
-- Read verified same-family records by id from `<shared-store>/em-records.jsonl` (canonical shared store). Reference implementation: `harness/iscp-research/ci-em.ts` (`retrieveCiEm(recordsPath, query)`, engine-free, P1 only). Idea Gate `ci-em.ts` is not the read path. Do not call retrieval from product code this skill does not own.
+- Read verified same-family records by id from the JSONL file at `$ISCP_EM_RECORDS` (default `./em-records.jsonl`). Reference implementation: `harness/iscp-research/ci-em.ts` (`retrieveCiEm(recordsPath, query)`, engine-free, P1 only). Do not call retrieval from product code this skill does not own.
 
-Read-only libraries (read, do not wire):
+Read-only libraries (read, do not wire). Rows marked *private engine* point at the private product engine and **aren't included in this repo**; engine-free copies live in `harness/iscp-research/`:
 
 | File | Use |
 |------|-----|
-| `the reference engine/src/lib/the reference engine/criteria-adversary.ts` | Game catalog, `HARDEN_TEXT` as gen-0 |
+| *private engine* `criteria-adversary.ts` | Game catalog, `HARDEN_TEXT` as gen-0 |
 | `harness/iscp-research/ci-em.ts` | Fleet P1 reader. `ANTI_ISC` stays on `port.ts` |
-| `the reference engine/src/lib/the reference engine/genome.ts` | Stable ids + core lock if you actually mutate |
-| `the reference engine/src/lib/the reference engine/isc-commit-gate.ts` | ISC-Commit Gate (exp-030) |
-| `the reference engine/src/lib/the reference engine/refusal-digest.ts` | emit + offline verify (exp-031) |
-| `the reference engine/src/lib/the reference engine/commit-or-refuse.ts` | one surface for τ4 vs τ2 (exp-032) |
+| *private engine* `genome.ts` | Stable ids + core lock if you actually mutate |
+| *private engine* `isc-commit-gate.ts` | ISC-Commit Gate (exp-030) |
+| *private engine* `refusal-digest.ts` | emit + offline verify (exp-031) |
+| *private engine* `commit-or-refuse.ts` | one surface for τ4 vs τ2 (exp-032) |
 | `iscp/memory/experience_format.md` (or this repo `memory/experience_format.md`) | EM / CI-EM record fields |
 | `harness/pure_gxp_loop.md` | Thin atom |
 

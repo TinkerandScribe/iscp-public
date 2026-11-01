@@ -1,8 +1,10 @@
 # Executable harnesses (impl-001)
 
-This folder has the first **runnable** pieces of the ISCP control system.
+This folder records the first runnable harness of the ISCP control system (impl-001).
 
-**Old label:** gxp-impl-001. Same code. New project name is ISCP.
+## Status
+
+This folder holds `experience_store.py`, a small Experience Memory writer, and the notes from our first runnable harness (impl-001). The full Python demos described in earlier notes (`pure_gxp`, `hybrid`, `graph`, `run_comparison.py`, `tests`) **aren't included in this repo**. For runnable code today, use [`harness/iscp-research`](../iscp-research/) (`npm install && npm test`), or the Python loop in [GXP](https://github.com/TinkerandScribe/gxp).
 
 ## Status of the outer yes/no checks (impl-001)
 
@@ -12,25 +14,7 @@ This folder has the first **runnable** pieces of the ISCP control system.
 4. No free-form layout growth — **PASS**
 5. Results recorded in the same format as exp-001–004 — **PASS**
 
-## Files
-
-- `pure_gxp_loop.py` — simple loop (the basic unit)
-- `hybrid_verification_node.py` — hybrid node (outer loop + inner signals)
-
-Both include a self-contained binary-search demo, a 12-case test suite that always runs the same way, anti-loop logic, and an Experience Memory writer.
-
-## How to run
-
-```bash
-python -m pure_gxp.gxp_loop          # simple loop demo
-python -m hybrid.hybrid_node         # hybrid demo
-python run_comparison.py             # side-by-side comparison
-python -m tests.test_pure_gxp        # unit tests
-```
-
-See [HOW_TO_RUN.md](HOW_TO_RUN.md) for the full walkthrough.
-
-## What we saw on the binary-search task
+## What we saw (impl-001, historical) on the binary-search task
 
 | Variant | Success | Outer loops | Experience records |
 |---------|---------|-------------|--------------------|
@@ -39,4 +23,4 @@ See [HOW_TO_RUN.md](HOW_TO_RUN.md) for the full walkthrough.
 
 Both variants fail early tries on purpose, use the anti-loop rule, write Experience Memory, and only commit after the outside test gate passes.
 
-Full source may also live in a working tree under `artifacts/gxp-harness/`. The notes in the parent `harness/` folder are the design docs.
+The notes in the parent `harness/` folder are the design docs.

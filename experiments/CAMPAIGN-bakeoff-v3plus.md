@@ -1,7 +1,7 @@
 # Phase 3 campaign: bakeoff — bare vs ISCP thin vs ISCP plus
 
 **Status:** Ran 2026-08-25 · **KEEP plus as default for fuzzy / review / reuse-risk work**; default stays thin on simple work. Helpers not wired. exp-015 rejected.  
-**Parent tracking:** [Issue #3](https://github.com/TinkerandScribe/iscp/issues/3)  
+**Parent tracking:** internal issue #3 (not public; see [iscp-public](https://github.com/TinkerandScribe/iscp-public))  
 **Primary brief:** [exp-021](exp-021.md)  
 **Appendix:** [bakeoff-v3plus/](bakeoff-v3plus/)
 

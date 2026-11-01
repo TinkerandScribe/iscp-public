@@ -2,10 +2,9 @@
 
 **Current name:** Ideal State Control Plane (**ISCP**)
 
-**Old name:** gxp (Guided eXecution Protocol — systems-engineering add-on)
+**Formerly an add-on to GXP** (Guided eXecution Protocol — systems-engineering add-on)
 
-**Repo:** [`TinkerandScribe/iscp`](https://github.com/TinkerandScribe/iscp)  
-Renamed from `gxp` on 2026-08-26. GitHub still redirects old URLs.
+**Repo:** [`TinkerandScribe/iscp-public`](https://github.com/TinkerandScribe/iscp-public)
 
 **Skill id:** `iscp` only. Path: [`skills/iscp/SKILL.md`](skills/iscp/SKILL.md). There is no `gxp` skill alias.
 
@@ -19,7 +18,7 @@ A control system for agent work. It uses:
 - failure memory keyed to those criteria
 - strict rules before any graph change
 
-It comes from GXP (loop + pass/fail checks + hard limits). It is **not** a product runtime. It does not auto-wire into `the reference engine` or curriculum-forge pipelines.
+It comes from GXP (loop + pass/fail checks + hard limits). It is **not** a product runtime. It does not auto-wire into any product pipeline.
 
 ## What stayed the same
 

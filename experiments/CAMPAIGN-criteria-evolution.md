@@ -1,7 +1,7 @@
 # Phase 2 campaign: criteria tools and control-system mechanisms
 
 **Status:** Phase 2a + 2b ran 2026-08-25. exp-010–014, 016–020 **KEEP**; exp-015 **SHADOW** (topology proposal rejected).  
-**Parent tracking:** [Issue #3](https://github.com/TinkerandScribe/iscp/issues/3)  
+**Parent tracking:** internal issue #3 (not public; see [iscp-public](https://github.com/TinkerandScribe/iscp-public))  
 **Discipline:** ISCP four builder rules (old name: gxp)  
 **Date opened:** 2026-08-25
 
